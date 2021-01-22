@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Tags</title>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <!-- bootstap and css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <!-- buch of mumbo jumbo -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- font awsome -->
+        <script src="https://kit.fontawesome.com/2c6f9210e3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <!-- asos anime -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="icon" type="image/png" href="images/logo.png"/>
+        <script type="text/javascript" src="text/javascript.js"></script>
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+
+            <!-- Sidebar -->
+            <div class="bg-light border-right bck-blu" id="sidebar-wrapper">
+              <!-- <div class="sidebar-heading">Study Guide</div> -->
+              <div class="sidebar-heading"><a href="index.html" class="sidebar-link-back">Study Guide</a></div>
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">How to use HTML tags?</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">HTML Document Structure</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Header Tags</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Paragraph Tag</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Anchor Tag</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Img Tag</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">HTML Lists</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">HTML Table</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Various other HTML Tags</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Character Entities</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light">Comment Tags</a>
+              </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+        
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+        
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarsel">
+                <div class="container-fluid">
+                  <button class="btn btn-outline-light" id="menu-toggle" id="img-toggle"> Table Of Contents </button>
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        
+                <div class="collapse navbar-collapse"id="navbarTogglerDemo03">
+                  
+                    <ul class="navbar-nav ml-auto" >
+                        <li class="nav-item">
+                          <a href="" class="nav-link">The Internet</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="htmltag.html" class="nav-link">&lt;HTML Tags&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+              <div class="container-fluid">
+                <section>
+                  <div class="histry-hedder-div">
+                    <h1 class="history-hedder">&lt;HTML Tags&gt;</h1>
+                  </div>
+                  <h1 class="titleh" id="Wolrd-Wide-Web">How to use HTML tags?</h1>
+                      <div class="row" data-aos="fade-right" style="padding-left: 20%;">
+                        <div  class="col-lg-12">
+                          <div class="check-this" id="first-text">
+                            <h2 class="history-li"><i class="fas fa-cube"></i> All HTMl Tags are surrounded by <strong>two characters <code>&lt;</code> and <code>&gt;</code></strong></h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> The characters that surround HTML tags are called Angle Brackets </h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> You can type Angle Brackets by pressing <kbd><kbd>Shift</kbd><kbd> + </kbd><kbd> &lt; or &gt;</kbd></kbd></kbd></h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> HTML tags normally come in pairs like <code>&lt;b&gt;</code> and <code>&lt;/b&gt;</code> </h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> The first tag in a pair is the start tag, the second tag is the end tag</h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> The End tag must contain a <code>&lt;/&gt;</code></h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> The text between the start and end tags is the <strong>element content</strong></h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> HTML tags are not case sensitive, <code>&lt;b&gt;</code> means the same as <code>&lt;B&gt;</code></h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="spaceing-bottom"></div>
+                      <div class="green-bg container-fluid">
+                        <h1 class="titleh" id="Wolrd-Wide-Web">HTML Document Structure</h1>
+                        <div class="row" data-aos="fade-right" style="padding-left: 20%; padding-right: 20%;">
+                          <div  class="col-lg-12">
+                              <h2 class="history-li"><i class="fas fa-cube"></i> At the beginning of every HTML document using HTML5 must include <code>&lt;!DOCTYPE html&gt;</code></h2>
+                              <h2 class="history-li"><i class="fas fa-cube"></i> Everything goes in between the <code>&lt;html&gt;</code> tags</h2>
+                              <h2 class="history-li"><i class="fas fa-cube"></i> The <code>&lt;head&gt;</code> tags are for the website metadata such as title and description</h2>
+                              <h2 class="history-li"><i class="fas fa-cube"></i> All of your website content goes in between the <code>&lt;body&gt;</code> tags</h2>
+                              <div class="spaceing"></div>
+                              <div class="code-show">
+                                <a href="test.html#docstruct" class="btn btn-outline-success btn-lg" role="button" style="float: right; margin-right: 10px; margin-top: -10px;">Try It</a>
+                                <p>&lt;!DOCTYPE html&gt;<br>
+                                  &lt;html&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is where your main code goes&lt;/h1&gt;<br>
+                                  
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                                  &lt;/html&gt;</p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="spaceing-bottom"></div>
+                      </div>
+                      <h1 class="titleh" id="Wolrd-Wide-Web">Header tags</h1>
+                      <div class="row" data-aos="fade-right" style="padding-left: 20%; padding-right: 20%;">
+                        <div  class="col-lg-12">
+                            <h2 class="history-li"><i class="fas fa-cube"></i> Header tags are typically used as titles</h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> The header tag starts with an h and ends with a 1-6 ex. <code>&lt;h2&gt; &lt;\h2&gt;</code></h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> <code>&lt;h1&gt;</code> is the largest text size and <code>&lt;h6&gt;</code> is the smallest text</h2>
+                            <h2 class="history-li"><i class="fas fa-cube"></i> All Header tags require a closing tag</h2>
+                            <div class="spaceing"></div>
+                              <div class="code-show">
+                                <a href="test.html#header" class="btn btn-outline-success btn-lg" role="button" style="float: right; margin-right: 10px; margin-top: -10px;">Try It</a>
+                                <p>&lt;!DOCTYPE html&gt;<br>
+                                  &lt;html&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1>Extra Large&lt;/h1&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2>large&lt;/h2&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3>Normal&lt;/h3&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4>Small&lt;/h4&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5>Smaller&lt;/h5&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6>Smallest&lt;/h6&gt;<br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                                  &lt;/html&gt;</p>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="spaceing-bottom"></div>
+                      <div class="green-bg container-fluid">
+                        <h1 class="titleh" id="Wolrd-Wide-Web">Paragraph Tag</h1>
+                        <div class="row" data-aos="fade-left" style="padding-left: 20%; padding-right: 20%;">
+                          <div  class="col-lg-12">
+                              <h2 class="history-li"><i class="fas fa-cube"></i> The use of a paragraph tag is right in its name, it is to display blocks of text</h2>
+                              <h2 class="history-li"><i class="fas fa-cube"></i> The paragraph tag is <code>&lt;p&gt; &lt;/p&gt;</code></h2>
+                              <h2 class="history-li"><i class="fas fa-cube"></i> The paragraph tag text is at the small size or <code>&lt;h6&gt;</code> to reference headers</h2>
+                              <h2 class="history-li"><i class="fas fa-cube"></i> To make a new line use <code>&lt;br&gt;</code> at the spot you want to make a new line, it does not need a closing tag</h2>
+                              <h2 class="history-li"><i class="fas fa-cube"></i> The paragraph tag requires a closing tag</h2>
+                              <div class="spaceing"></div>
+                              <div class="code-show">
+                                <a href="test.html#paragraph" class="btn btn-outline-success btn-lg" role="button" style="float: right; margin-right: 10px; margin-top: -10px;">Try It</a>
+                                <p>&lt;!DOCTYPE html&gt;<br>
+                                  &lt;html&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title>Page Title&lt;/title&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph tag it also has no br tag causing it to create a new line once it reaches the limit of its container &lt;/p&gt;<br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;By using the br tag i can create a new line to keep format as i see in the IDE&lt;br&gt;&lt;/p&gt;<br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                                  &lt;/html&gt;</p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="spaceing-bottom"></div>
+                        </div>
+                          <h1 class="titleh" id="Wolrd-Wide-Web">Anchor Tags</h1>
+                              <div class="row" data-aos="fade-right" style="padding-left: 20%;">
+                                <div  class="col-lg-12">
+                                  <div class="check-this" id="first-text">
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> The anchor Tag is used to embed links into your website</h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> The anchor tag is <code>&lt;a herf=" "&gt; &lt;/a&gt;</code></h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> The anchor tag has one in-line parameter <code>herf=""</code></h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> The <code>herf</code> parameter is used to specify the url to a website or an id for an internal link</h2>
+                                    <div class="spaceing"></div>
+                                    <div class="code-show">
+                                      <a href="test.html#atag" class="btn btn-outline-success btn-lg" role="button" style="float: right; margin-right: 10px; margin-top: -10px;">Try It</a>
+                                      <p>
+                                        &lt;!DOCTYPE html><br>
+                                        &lt;html><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;head><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title>Page Title&lt;/title><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/head><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;body><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="index.html">This will take you to the home page&lt;/a><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#paragraph">This will take you the paragraph below&lt;/a><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body><br>
+                                        &lt;/html><br>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="spaceing-bottom"></div>
+                              <div class="green-bg container-fluid">
+                                <h1 class="titleh" id="Wolrd-Wide-Web">Image Tag</h1>
+                                <div class="row" data-aos="fade-left" style="padding-left: 20%; padding-right: 20%;">
+                                  <div  class="col-lg-12">
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> The image tag is used to display images on your website</h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> The image tag is <code>&lt;img src=" " alt=""&gt; &lt;/img&gt;</code></h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> The image Tag has two main inline parameter the src you make this equal either the url or the file location</h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> The other main inline parameter is the alt witch is essentially the image identifier</h2>
+                                      <div class="spaceing"></div>
+                                      <div class="code-show">
+                                        <a href="test.html#image" class="btn btn-outline-success btn-lg" role="button" style="float: right; margin-right: 10px; margin-top: -10px;">Try It</a>
+                                        <p>&lt;!DOCTYPE html&gt;<br>
+                                          &lt;html><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;head><br>
+                                          &lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title>Page Title&lt;/title><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;body><br>
+                                        <!--Write Your Code Below This Line-->
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="yo"><br>
+                                        <!--Write Your Code above This Line-->
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body><br>
+                                        &lt;/html></p><br>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="spaceing-bottom"></div>
+                                </div>
+                                <h1 class="titleh" id="Wolrd-Wide-Web">HTML Lists</h1>
+                              <div class="row" data-aos="fade-right" style="padding-left: 20%;">
+                                <div  class="col-lg-12">
+                                  <div class="check-this" id="first-text">
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> there are two different types of lists in html</h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> the first list is <code>&lt;ul></code>for an unordered list</h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> the first list is <code>&lt;ol></code>for an ordered list</h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> the the ordered list is used for numbering such as 123 etc or roman numerals</h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> the unordered list is used for dot jot squares etc or nothing</h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> in order to put data inside your list you have to use the <code>&lt;li> &lt;/li></code> inside the list tags</h2>
+                                    <div class="spaceing"></div>
+                                    <div class="code-show">
+                                      <a href="test.html#list" class="btn btn-outline-success btn-lg" role="button" style="float: right; margin-right: 10px; margin-top: -10px;">Try It</a>
+                                      <p>
+                                        &lt;html><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;head><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title>Page Title&lt;/title><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;body><br>
+                                        <!--Write Your Code Below This Line-->
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>first item</li><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>second item</li><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>third item</li><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>first item</li><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>second item</li><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>third item</li><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol><br>
+                                        <!--Write Your Code above This Line-->
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body><br>
+                                        &lt;/html><br>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="spaceing-bottom"></div>
+                              <div class="green-bg container-fluid">
+                                <h1 class="titleh" id="Wolrd-Wide-Web">Tables</h1>
+                                <div class="row" data-aos="fade-left" style="padding-left: 20%; padding-right: 20%;">
+                                  <div  class="col-lg-12">
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> The table tag is used to create tables of what ever size you want</h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> the table has four tags required to use it</h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> The first Table tag is <code>&lt;table>&lt;/table></code> ths is ued to define that table body just like the <code>&lt;body></code> tag</h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> the second table tag is <code>&lt;tr>&lt;/tr></code> tag witch is used to make a table row</h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> the third table tag is <code>&lt;td>&lt;/td></code> tag witch is used to add your data/text to the table</h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> As you add table data it will make a new colum per tag</h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> the fourth table tag is <code>&lt;th>&lt;/th></code> tag witch is ued to make the table header it is not necessary but it bold's the text</h2>
+                                      <div class="spaceing"></div>
+                                      <div class="code-show">
+                                        <a href="test.html#table" class="btn btn-outline-success btn-lg" role="button" style="float: right; margin-right: 10px; margin-top: -10px;">Try It</a>
+                                        <p>
+                                          &lt;table><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th>First name&lt;/th><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th>Last name&lt;/th><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Peter</td><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Griffin</td><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Lois</td><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Griffin</td><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr><br>
+                                          &lt;/table><br>
+                                        </p>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="spaceing-bottom"></div>
+                                </div>
+                                <h1 class="titleh" id="Wolrd-Wide-Web">Various other HTML Tags</h1>
+                              <div class="row" data-aos="fade-right" style="padding-left: 20%;">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">tag</th>
+                                      <th scope="col">description</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td><code>&lt;hr></code></td>
+                                      <td>makes a horizontal line across the screen</td>
+                                    </tr>
+                                    <tr>
+                                      
+                                      <td><code>&lt;br></code></td>
+                                      <td>Makes a newline in a paragraph tag</td>
+                                    </tr>
+                                    <tr>
+                                      
+                                      <td><code>&lt;code>&lt;code></code></td>
+                                      <td>used to format code on website</td>
+                                    </tr>
+                                    <tr>
+                                      
+                                      <td><code>&lt;strong>&lt;strong></code></td>
+                                      <td>put this tag around text to make it bold inside the parent tag</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="spaceing-bottom"></div>
+                              <div class="green-bg container-fluid">
+                                <h1 class="titleh" id="Wolrd-Wide-Web">Character entities</h1>
+                                <div class="row" data-aos="fade-left" style="padding-left: 20%; padding-right: 20%;">
+                                  <div  class="col-lg-12">
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> character entities are used to print out unusual or uncommon characters such as &lt; or &#36; or &spades;</h2>
+                                      <h2 class="history-li"><i class="fas fa-cube"></i> character entities are a specific code to the character followed by a semicolon ex &#38;lt; to print &lt;</h2>
+                                      <div class="spaceing"></div>
+                                      <div class="code-show">
+                                        <a href="test.html#entity" class="btn btn-outline-success btn-lg" role="button" style="float: right; margin-right: 10px; margin-top: -10px;">Try It</a>
+                                        <p>&lt;!DOCTYPE html&gt;<br>
+                                          &lt;html><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;head><br>
+                                          &lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title>Page Title&lt;/title><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head><br>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;body><br>
+                                        <!--Write Your Code Below This Line-->
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p>this wil print a angle bracket &#38;lt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p><br>
+                                        <!--Write Your Code above This Line-->
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body><br>
+                                        &lt;/html></p><br>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="spaceing-bottom"></div>
+                                </div>
+                                <h1 class="titleh" id="Wolrd-Wide-Web">Comments</h1>
+                              <div class="row" data-aos="fade-right" style="padding-left: 20%;">
+                                <div  class="col-lg-12">
+                                  <div class="check-this" id="first-text">
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> Comment tags are extremely useful for making your code more readable and easier to debug</h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> Comment tags make no difference to your code</h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> The comment tag syntax is <code>&lt;!-- Your Text Here --></code></h2>
+                                    <h2 class="history-li"><i class="fas fa-cube"></i> Normally dies will grey out comments to show they are not part of the normal code</h2>
+                                    <div class="spaceing"></div>
+                                    <div class="code-show">
+                                      <a href="test.html#comment" class="btn btn-outline-success btn-lg" role="button" style="float: right; margin-right: 10px; margin-top: -10px;">Try It</a>
+                                      <p>
+                                        &lt;html><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;head><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title>Page Title&lt;/title><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;body><br>
+                                        <!--Write Your Code Below This Line-->
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- This paragraph is about the Simpsons --> <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p> Hommer is the best&lt;/p><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body><br>
+                                        &lt;/html><br>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="spaceing-bottom"></div>
+                              <section>
+                                <div class="footer text-center">
+                                  <a href="https://forms.gle/6SXLvDGCzQ4yd5Lg6" class="btn btn-outline-light btn-lg" role="button"> Take the test</a>
+                                  <a href="https://forms.gle/6SXLvDGCzQ4yd5Lg6" class="btn btn-outline-light btn-lg" role="button"> Take the quiz</a>
+                                </div>
+                              </section>
+                </section>
+                <!-- main content -->
+
+            <!-- /#page-content-wrapper -->
+        
+          </div>
+          <!-- /#wrapper -->
+        
+          <!-- Bootstrap core JavaScript -->
+          <script src="vendor/jquery/jquery.min.js"></script>
+          <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+          <!-- Menu Toggle Script -->
+          <script>
+            
+            $("#menu-toggle").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("toggled");
+            });
+            
+          </script>
+
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init()
+          </script>
+          <!-- this is for if the height of any elemtn chages so aos doesnt break -->
+          <script>
+            onElementHeightChange(document.body, function(){
+              AOS.refresh();
+            });
+
+            function onElementHeightChange(elm, callback) {
+              var lastHeight = elm.clientHeight
+              var newHeight;
+
+            (function run() {
+              newHeight = elm.clientHeight;      
+              if (lastHeight !== newHeight) callback();
+              lastHeight = newHeight;
+
+              if (elm.onElementHeightChangeTimer) {
+              clearTimeout(elm.onElementHeightChangeTimer); 
+            }
+
+              elm.onElementHeightChangeTimer = setTimeout(run, 200);
+              })();
+            }
+          </script>
+        </div>
+      </body>
+    </body>
+</html>

@@ -1,0 +1,329 @@
+
+<html>
+    <head>
+        <title>max's code pen</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" integrity="sha512-GZ1RIgZaSc8rnco/8CXfRdCpDxRCphenIiZ2ztLy3XQfCbQUSCuk8IudvNHxkRA3oUg6q0qejgN/qqyG1duv5Q==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/2c6f9210e3.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="text/test.js"></script>
+        <link rel="icon" type="image/png" href="images/logo.png"/>
+
+        <style>
+            html,body { margin:0; padding:0; height:100%; width:100%;}
+
+            #editor {
+                margin: 14px 5px 10px 0px;
+                height: 100%;
+                width: 50%;
+                
+                display:inline-block;
+            }
+
+            #container {
+                height:100%;
+                width:auto;
+                white-space : nowrap; 
+                overflow : hidden;
+                position:relative;
+                background-color: lightgrey;
+            }
+
+            #iframe {
+                height: 100%;
+                width: 50%;
+                margin: 14px 10px 10px 5px;
+                display:inline-block;
+                background-color: white;
+            }
+
+            .ace_editor .ace_marker-layer .ace_bracket { display: none }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarsel">
+            <div class="container-fluid">
+            <a href="htmltag.html" class="btn btn-outline-light btn-md" role="button"><i class="fas fa-arrow-left"></i> Go Back</a>
+
+            </div>
+        </nav>
+
+        <div id='container'>
+
+            <div id="editor">
+            </div>
+          
+            <iframe id='iframe' frameBorder="0">
+            </iframe>
+        </div>
+
+       <script>
+           
+           //has to be decalared globally for each function to use it
+           var editor = ace.edit("editor");
+            //diffrent editor code that shows up dynamicly
+            function docstruct(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <title>Page Title</title>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "<!--Write Your Code Below This Line-->\n"+
+                "       <h1>This is a Heading</h1>\n" +
+                "       <p>This is a paragraph.</p>\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function header(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <title>Page Title</title>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "<!--Write Your Code Below This Line-->\n"+
+                "       <h1>Huge</h1>\n"+
+                "       <h2>Extra Large</h2>\n"+
+                "       <h3>Large</h3>\n"+
+                "       <h4>Small</h4>\n"+
+                "       <h5>Smaller</h5>\n"+
+                "       <h6>Smallest</h6>\n"+
+                "<!--Write Your Code above This Line-->\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function paragraph(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <title>Page Title</title>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "<!--Write Your Code Below This Line-->\n"+
+                "       <p>This is a paragraph tag it also has no br tag causing it to create a new line once it reaches the limit of its container\n"+
+                "       pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.\n"+
+                "       Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex,\n"+
+                "       in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent\n"+
+                "       per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut</p>\n"+
+                "\n"+
+                "       <p>By using the br tag i can create a new line to keep format as i see in the IDE<br> \n"+
+                "       pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.<br>\n"+
+                "       Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex,<br>\n"+
+                "       in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent<br>\n"+
+                "       per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut</p>\n"+
+                "<!--Write Your Code above This Line-->\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function default_html(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <title>Page Title</title>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "<!--Write Your Code Below This Line-->\n"+
+                "\n" +
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function docstruct(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <title>Page Title</title>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "<!--Write Your Code Below This Line-->\n"+
+                "       <h1>This is a Heading</h1>\n" +
+                "       <p>This is a paragraph.</p>\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function atag(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <title>Page Title</title>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "<!--Write Your Code Below This Line-->\n"+
+                '   <a href="index.html">This will take you to the home page</a>\n' +
+                '   <a href="#paragraph">This will take you the paragraph below</a>\n' +
+                '   <p id="paragraph">' +
+                "       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,<br> \n"+
+                "       pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. <br>\n"+
+                "       Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex,<br>\n"+
+                "       in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent<br>\n"+
+                "       per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut<br>\n"+
+                '   </p>\n' +
+                "<!--Write Your Code above This Line-->\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function image(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <title>Page Title</title>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "<!--Write Your Code Below This Line-->\n"+
+                    "<img src=\"https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png\" alt=\"yo\">\n"+
+                "<!--Write Your Code above This Line-->\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function list(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <title>Page Title</title>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "<!--Write Your Code Below This Line-->\n"+
+                "       <ul>\n"+
+                "          <li>first item</li>\n"+
+                "          <li>second item</li>\n"+
+                "          <li>third item</li>\n"+
+                "      </ul>\n"+
+                "      <ol>\n"+
+                "           <li>first item</li>\n"+
+                "           <li>second item</li>\n"+
+                "           <li>third item</li>\n"+
+                "       </ol>\n"+
+                "<!--Write Your Code above This Line-->\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function table(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <style>\n" +
+                "       table, th, td {\n" +
+                "           border: 1px solid black;\n"+
+                "       }\n"+
+                "       </style>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "<!--Write Your Code Below This Line-->\n"+
+                "<table>\n"+
+                "  <tr>\n"+
+                "    <th>Firstname</th>\n"+
+                "    <th>Lastname</th>\n"+
+                "  </tr>\n"+
+                "  <tr>\n"+
+                "    <td>Peter</td>\n"+
+                "    <td>Griffin</td>\n"+
+                "  </tr>\n"+
+                "  <tr>\n"+
+                "    <td>Lois</td>\n"+
+                "    <td>Griffin</td>\n"+
+                "  </tr>\n"+
+                "</table>\n"+
+                "<!--Write Your Code above This Line-->\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function entity(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "       <style>\n" +
+                "       table, th, td {\n" +
+                "           border: 1px solid black;\n"+
+                "       }\n"+
+                "       </style>\n" +
+                "   </head>\n" +
+                "   <body>\n"+
+                "       <p>this wil print a semi-colon &lt;</p>\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function comment(){
+                editor.getSession().setValue("<!DOCTYPE html>\n" +
+                "<html>\n" + 
+                "   <head>\n"+
+                "   </head>\n" +
+                "   <body>\n"+
+                "       <!-- There paragraph is about the Simpsons -->\n"+
+                "       <p> Hommer is the best</p>\n"+
+                "   </body>\n"+
+                "</html>");
+            }
+
+            function setupEditor(){
+
+                editor.setTheme("ace/theme/monokai");
+                editor.session.setMode("ace/mode/html");
+
+
+                editor.getSession().on('change', function() {
+                    update();
+                });
+            }
+
+            var hash = window.location.hash.substr(1);
+           
+            switch(hash){
+                case 'docstruct': 
+                    docstruct();
+                    break;
+                case 'header':
+                    header();
+                    break;
+                case 'paragraph':
+                    paragraph();
+                    break;
+                case 'atag':
+                    atag();
+                    break;
+                case 'image':
+                    image();
+                    break;
+                case 'list':
+                    list()
+                    break;
+                case 'table':
+                    table()
+                    break;
+                case 'entity':
+                    entity();
+                    break;
+                case 'comment':
+                    comment();
+                    break;
+                default:
+                    default_html();
+                    break;
+            }
+
+            function update(){
+                var val = editor.getSession().getValue();
+
+                var doc = document.getElementById('iframe').contentWindow.document;
+                doc.open();
+                    doc.write(val);
+                doc.close();
+            }
+
+            setupEditor();
+            update();
+       </script>
+    </body>
+</html>

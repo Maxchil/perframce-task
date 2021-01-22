@@ -1,0 +1,28 @@
+html,body { margin:0; padding:0; height:100%; width:100%; overflow: hidden;}
+
+#editor {
+    margin: 14px 5px 10px 0px;
+    height: 100%;
+    width: 50%;
+    
+    display:inline-block;
+}
+
+#container {
+    height:100%;
+    width:auto;
+    white-space : nowrap; 
+    overflow : hidden;
+    position:relative;
+    background-color: lightgrey;
+}
+
+#iframe {
+    height: 100%;
+    width: 50%;
+    margin: 14px 10px 10px 5px;
+    display:inline-block;
+    background-color: white;
+}
+
+.ace_editor .ace_marker-layer .ace_bracket { display: none }

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.navbar-brand {
+    color: whitesmoke;
+}
+
+.title{
+    font-size: 8rem;
+    z-index: 1;
+    font-family: 'Fredoka One', cursive;
+    color: #222831;
+    display: block;
+}
+body{
+    background-color: #eeeeee;
+    padding: 0px;
+    margin: 0px;
+}
+
+.getstarted{
+    margin: 0px 30px;
+}
+
+.navbarsel{
+    z-index: 1;
+}
+
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    background-color: #00adb5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.particles-js-canvas-el{
+    position: absolute;
+}
+
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+min-height: 100vh;
+margin-left: -15rem;
+-webkit-transition: margin .25s ease-out;
+-moz-transition: margin .25s ease-out;
+-o-transition: margin .25s ease-out;
+transition: margin .25s ease-out;
+
+}
+
+#sidebar-wrapper .sidebar-heading {
+padding: 0.875rem 1.25rem;
+font-size: 1.2rem;
+}
+
+.sidebar-link-back{
+  color: #222831;
+}
+
+.sidebar-link-back:hover{
+  text-decoration: none;
+  color: lightseagreen;
+}
+
+.bck-blu{
+  background-color: #00adb5;
+}
+.sidebar-heading{
+  font-size: 2rem;
+  color: #222831;
+}
+
+#sidebar-wrapper .list-group {
+width: 15rem;
+}
+
+#page-content-wrapper {
+min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+margin-left: 0;
+}
+
+@media (min-width: 768px) {
+#sidebar-wrapper {
+  margin-left: 0;
+}
+
+.aos-hide{
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -15rem;
+  
+}
+}
+
+.history-hedder{
+  padding-top: 40px;
+  color: #222831;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 7rem;
+  padding-bottom: 10%;
+}
+
+.histry-hedder-div{
+  background-image: linear-gradient(#00adb5, #71bbbe);
+  
+}
+.container-fluid{
+  padding: 0px;
+}
+
+.titleh{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.history-li{
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.history-ul{
+  list-style-type: none;
+}
+
+.history-div-2{
+  display: inline-block;
+  padding-left: 25%;
+}
+
+.m1img{
+  float: left;
+  width: 180px;
+  height: auto;
+  padding-bottom: 30px;
+  /* margin-left: 40px;
+  margin-right: auto;
+  display: block;
+  height: auto;
+  width: 230px;
+  border-radius: 30px; */
+}
+
+#html5{
+  float: left;
+}
+
+#chromimg{
+  float: right;
+}
+
+.spacetop{
+  margin-top: 50px;
+}
+
+.green-bg{
+  background-color: #71bbbe;
+}
+
+/* .chrom-img{
+    height: var(--height);
+    width: auto; 
+} */
+
+.check-this{
+  display: inline-block;
+}
+
+.row{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footer-text{
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #eeeeee;
+}
+
+.footer{
+  background-color: #393e46;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.center-1{
+  padding-left: 38%;
+}
+
+@media(max-width: 900px){
+  #chromimg{
+      display: none;
+  }
+  .m1img{
+    display: none;
+  }
+  #html5{
+    display: none;
+  }
+  #html-page{
+    display: none;
+  }
+  #wc3-img{
+    display: none;
+  }
+}
+
+.spaceing-bottom{
+  width: 100%;
+  height: 50px;
+}
+
+code{
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.code-show{
+  background-color: white;
+  padding: 15px 0 15px 20px;
+  border-radius: 10px;
+  border: 3px solid #393e46;
+}
+
+p{
+  margin-bottom: 0px;
+}
+
+.spaceing{
+  width: 100%;
+  height: 30px;
+}
+/* custom scroll bar */
+::-webkit-scrollbar{
+  width: 12px;
+  background-color: linear-gradient(#222831, #393e46);
+}
+
+::-webkit-scrollbar-thumb{
+  background: #222831;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(trandparent, #71bbbe);
+  border-radius: 6px;
+}
